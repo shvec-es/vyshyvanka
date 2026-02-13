@@ -1,0 +1,12 @@
+:root {
+  --main-color: #fcf9f9;
+  --second-color: rgba(252, 249, 249, 0.4);
+  --accent-color: #ecd979;
+  --bg-color: #1c2225;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--main-color);
+  background-color: var(--bg-color);
+}
