@@ -4,38 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VyshyvankaVibes</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/logo.svg" alt="logo" width="44"
-        /></a>
-        <ul>
-          <li><a href="">About us</a></li>
-          <li><a href="">Our collection </a></li>
-          <li><a href="">Customer order</a></li>
-          <li><a href="">Testimonials</a></li>
-        </ul>
-      </nav>
-      <address><a href="tel:+380684439426">+380 (68) 443-94-26</a></address>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/" target="_blank">facebook</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank">instagram</a>
-        </li>
-        <li><a href="https://www.youtube.com/" target="_blank">youtube</a></li>
-      </ul>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="./index.html"
+            ><img src="./images/logo.svg" alt="logo" width="44"
+          /></a>
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="">About us</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Our collection </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Customer order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Testimonials</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts-wrapper">
+          <address>
+            <a class="contact-link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
+          </address>
+          <ul class="soc-list">
+            <li class="soc-item">
+              <a
+                class="soc-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                >fb</a
+              >
+            </li>
+            <li class="soc-item">
+              <a
+                class="soc-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                >ig</a
+              >
+            </li>
+            <li class="soc-item">
+              <a
+                class="soc-link"
+                href="https://www.youtube.com/"
+                target="_blank"
+                >yt</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section>
-        <img src="./images/hero.jpg" alt="girl" width="392" />
-        <h1>Reviving the traditional Ukrainian artistry in every stitch.</h1>
-        <a href="">Order</a>
-        <img src="./images/star.png" alt="star in hero" width="52" />
-        <p>all embroidery is made by hand</p>
+        <div class="container">
+          <img src="./images/hero.jpg" alt="girl" width="392" />
+          <h1>Reviving the traditional Ukrainian artistry in every stitch.</h1>
+          <a href="">Order</a>
+          <img src="./images/star.png" alt="star in hero" width="52" />
+          <p>all embroidery is made by hand</p>
+        </div>
       </section>
       <section>
         <h2>About Us</h2>
