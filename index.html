@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,8 +61,11 @@
                 href="https://www.facebook.com/"
                 target="_blank"
                 aria-label="link to Facebook"
-                >fb</a
               >
+                <svg class="soc-link-svg" width="28" height="28">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="soc-item">
               <a
@@ -66,8 +73,11 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 aria-label="link to Instagram"
-                >inst</a
               >
+                <svg class="soc-link-svg" width="28" height="28">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="soc-item">
               <a
@@ -75,8 +85,11 @@
                 href="https://www.youtube.com/"
                 target="_blank"
                 aria-label="link to YouTube"
-                >yt</a
               >
+                <svg class="soc-link-svg" width="28" height="28">
+                  <use href="./images/icons.svg#youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -97,11 +110,16 @@
               <span class="accent-text">Ukrainian</span> artistry in every
               stitch.
             </h1>
-            <a class="order-btn" href="">Order</a>
+            <a class="order-btn" href="#order"
+              >Order
+              <svg class="" width="26" height="26">
+                <use href="./images/icons.svg#arrow"></use>
+              </svg>
+            </a>
           </div>
           <div class="star-wrap">
             <img
-              class="star-img"
+              class="star-img animate__animated animate__rotateIn"
               src="./images/star.png"
               alt="star in hero"
               width="52"
@@ -133,12 +151,14 @@
               symbolism, which gives it a special meaning.
             </p>
           </div>
-          <img
-            class="about-img"
-            src="./images/about.jpg"
-            alt="about section photo"
-            width="594"
-          />
+          <div class="about-img-wrapper">
+            <img
+              class="about-img"
+              src="./images/about.jpg"
+              alt="about section photo"
+              width="594"
+            />
+          </div>
         </div>
       </section>
       <section class="section collection-section" id="collection">
@@ -235,16 +255,52 @@
       </section>
       <section class="section oder-section" id="order">
         <div class="container">
-          <img
-            class="order-img"
-            src="./images/order.jpg"
-            alt="order section"
-            width="588"
-          />
-          <h2 class="title order-title">
-            <span class="accent-text">Your order</span> is our priority:
-            Personalized approach and quality of service
-          </h2>
+          <div class="order-img-wrapper">
+            <img
+              class="order-img"
+              src="./images/order.jpg"
+              alt="order section"
+              width="588"
+            />
+          </div>
+          <div class="order-form-wrapper">
+            <h2 class="title order-title">
+              <span class="accent-text">Your order</span> is our priority:
+              Personalized approach and quality of service
+            </h2>
+            <form class="order-form">
+              <label class="order-label" for="name"
+                ><input
+                  class="order-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+              /></label>
+              <label class="order-label" for="email"
+                ><input
+                  class="order-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+              /></label>
+              <label class="order-label-te" for="comment">
+                <textarea
+                  class="order-texterea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Comments"
+                ></textarea>
+              </label>
+              <button class="order-form-btn" type="submit">
+                Send
+                <svg class="" width="26" height="26">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </section>
       <section class="section test-section" id="testimonials">
