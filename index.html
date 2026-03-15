@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
           <a
             class="logo"
@@ -48,84 +48,134 @@
             </li>
           </ul>
         </nav>
-        <div class="header-contacts">
-          <address>
-            <a class="contact-tel" href="tel:+380684439426"
-              >+380 (68) 443-94-26</a
+        <address class="address">
+          <a class="contact-tel" href="tel:+380684439426"
+            >+380 (68) 443-94-26</a
+          >
+        </address>
+        <ul class="soc-list">
+          <li class="soc-item">
+            <a
+              class="soc-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              aria-label="link to Facebook"
             >
-          </address>
-          <ul class="soc-list">
-            <li class="soc-item">
-              <a
-                class="soc-link"
-                href="https://www.facebook.com/"
-                target="_blank"
-                aria-label="link to Facebook"
-              >
-                <svg class="soc-link-svg" width="28" height="28">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-item">
-              <a
-                class="soc-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-                aria-label="link to Instagram"
-              >
-                <svg class="soc-link-svg" width="28" height="28">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-item">
-              <a
-                class="soc-link"
-                href="https://www.youtube.com/"
-                target="_blank"
-                aria-label="link to YouTube"
-              >
-                <svg class="soc-link-svg" width="28" height="28">
-                  <use href="./images/icons.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <svg class="soc-link-svg" width="28" height="28">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-item">
+            <a
+              class="soc-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              aria-label="link to Instagram"
+            >
+              <svg class="soc-link-svg" width="28" height="28">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-item">
+            <a
+              class="soc-link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              aria-label="link to YouTube"
+            >
+              <svg class="soc-link-svg" width="28" height="28">
+                <use href="./images/icons.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button class="burger-open-btn" type="button">
+          <svg class="burger-open-icon" width="36" height="24">
+            <use href="./images/icons.svg#burger-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close-btn">
+            <svg class="mobile-menu-close-icon" width="36" height="36">
+              <use href="./images/icons.svg#burger-close"></use>
+            </svg>
+          </button>
+          <a class="mobile-contact-tel" href="tel:+380684439426"
+            >+380 (68) 443-94-26</a
+          >
+          <nav class="mobile-header-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="#about">About us</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="#collection"
+                  >Our collection
+                </a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="#order">Customer order</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="#testimonials">Testimonials</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero-section" id="hero">
+      <section class="section hero-section" id="hero">
         <div class="container">
-          <img
-            class="hero-img"
-            src="./images/hero.jpg"
-            alt="girl"
-            width="392"
-          />
-          <div class="title-wrap">
-            <h1 class="hero-title">
-              Reviving the traditional
-              <span class="accent-text">Ukrainian</span> artistry in every
-              stitch.
-            </h1>
-            <a class="order-btn" href="#order"
-              >Order
-              <svg class="" width="26" height="26">
-                <use href="./images/icons.svg#arrow"></use>
-              </svg>
-            </a>
+          <div class="title-star-wrapper">
+            <div class="title-wrap">
+              <h1 class="hero-title">
+                Reviving the traditional
+                <span class="accent-text">Ukrainian</span> artistry in every
+                stitch.
+              </h1>
+              <a class="order-btn" href="#order"
+                >Order
+                <svg class="" width="26" height="26">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="star-wrap">
+              <img
+                class="star-img animate__animated animate__rotateIn"
+                src="./images/star.png"
+                alt="star in hero"
+                width="52"
+              />
+              <p class="hero-text">all embroidery is made by hand</p>
+            </div>
           </div>
-          <div class="star-wrap">
-            <img
-              class="star-img animate__animated animate__rotateIn"
-              src="./images/star.png"
-              alt="star in hero"
-              width="52"
+          <picture>
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/hero/desktop.jpg    1x,
+                ./images/hero/desktop@2x.jpg 2x
+              "
             />
-            <p class="hero-text">all embroidery is made by hand</p>
-          </div>
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/hero/tablet.jpg    1x,
+                ./images/hero/tablet@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="./images/hero/mob.jpg 1x, ./images/hero/mob@2x.jpg 2x"
+            />
+            <img class="hero-img" src="./images/hero/mob.jpg" alt="girl" />
+          </picture>
         </div>
       </section>
       <section class="section about-section" id="about">
@@ -152,12 +202,31 @@
             </p>
           </div>
           <div class="about-img-wrapper">
-            <img
-              class="about-img"
-              src="./images/about.jpg"
-              alt="about section photo"
-              width="594"
-            />
+            <picture>
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./images/about/desktop.jpg    1x,
+                  ./images/about/desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/about/tablet.jpg    1x,
+                  ./images/about/tablet@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width:767px)"
+                srcset="./images/about/mob.jpg 1x, ./images/about/mob@2x.jpg 2x"
+              />
+              <img
+                class="about-img"
+                src="./images/about/mob.jpg"
+                alt="about section photo"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -168,7 +237,11 @@
             <li class="collection-item">
               <img
                 class="collection-img"
-                src="./images/collection1.jpg"
+                srcset="
+                  ./images/collection/collection1.jpg    1x,
+                  ./images/collection/collection1@2x.jpg 2x
+                "
+                src="./images/collection/collection1.jpg"
                 alt="AUGUST Poltava women's blouseRING"
                 width="380"
               />
@@ -182,7 +255,11 @@
             <li class="collection-item">
               <img
                 class="collection-img"
-                src="./images/collection2.jpg"
+                srcset="
+                  ./images/collection/collection2.jpg    1x,
+                  ./images/collection/collection2@2x.jpg 2x
+                "
+                src="./images/collection/collection2.jpg"
                 alt="Women's blouse Gorgany"
                 width="380"
               />
@@ -194,7 +271,11 @@
             <li class="collection-item">
               <img
                 class="collection-img"
-                src="./images/collection3.jpg"
+                srcset="
+                  ./images/collection/collection3.jpg    1x,
+                  ./images/collection/collection3@2x.jpg 2x
+                "
+                src="./images/collection/collection3.jpg"
                 alt="Women's blouse Crimea"
                 width="380"
               />
@@ -206,7 +287,11 @@
             <li class="collection-item">
               <img
                 class="collection-img"
-                src="./images/collection4.jpg"
+                srcset="
+                  ./images/collection/collection4.jpg    1x,
+                  ./images/collection/collection4@2x.jpg 2x
+                "
+                src="./images/collection/collection4.jpg"
                 alt="Men's shirt Verkhovina"
                 width="380"
               />
@@ -218,7 +303,11 @@
             <li class="collection-item">
               <img
                 class="collection-img"
-                src="./images/collection5.jpg"
+                srcset="
+                  ./images/collection/collection5.jpg    1x,
+                  ./images/collection/collection5@2x.jpg 2x
+                "
+                src="./images/collection/collection5.jpg"
                 alt="Mountain men's shirt"
                 width="380"
               />
@@ -230,7 +319,11 @@
             <li class="collection-item">
               <img
                 class="collection-img"
-                src="./images/collection6.jpg"
+                srcset="
+                  ./images/collection/collection6.jpg    1x,
+                  ./images/collection/collection6@2x.jpg 2x
+                "
+                src="./images/collection/collection6.jpg"
                 alt="Men's shirt Yasen"
                 width="380"
               />
@@ -245,23 +338,60 @@
       <section class="section gallery-section">
         <div class="container">
           <h2 class="visually-hidden">Gallery</h2>
-          <img
-            class="gallery-img"
-            src="./images/gallery.jpg"
-            alt="gallery section"
-            width="1280"
-          />
+          <picture>
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/gallery/desktop.jpg    1x,
+                ./images/gallery/desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                ./images/gallery/tablet.jpg    1x,
+                ./images/gallery/tablet@2x.jpg 2x
+              "
+            />
+            <source
+              media="(max-width:767px)"
+              srcset="
+                ./images/gallery/mob.jpg    1x,
+                ./images/gallery/mob@2x.jpg 2x
+              "
+            />
+            <img
+              class="about-img"
+              src="./images/gallery/mob.jpg"
+              alt="gallery section photo"
+            />
+          </picture>
         </div>
       </section>
       <section class="section oder-section" id="order">
         <div class="container">
           <div class="order-img-wrapper">
-            <img
-              class="order-img"
-              src="./images/order.jpg"
-              alt="order section"
-              width="588"
-            />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/order/desktop.jpg    1x,
+                  ./images/order/desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 1279px)"
+                srcset="
+                  ./images/order/tablet.jpg    1x,
+                  ./images/order/tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="order-img"
+                src="./images/order/desktop.jpg"
+                alt="order section photo"
+              />
+            </picture>
           </div>
           <div class="order-form-wrapper">
             <h2 class="title order-title">
@@ -361,18 +491,18 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About us</a>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#about">About us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#collection">Our collection</a>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#collection">Our collection</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#order">Customer order</a>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#order">Customer order</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonials</a>
+          <li class="footer-nav-item">
+            <a class="footer-nav-link" href="#testimonials">Testimonials</a>
           </li>
         </ul>
         <p class="footer-text">
